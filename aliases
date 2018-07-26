@@ -17,3 +17,10 @@ alias path='echo $PATH | tr -s ":" "\n"'
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
+
+# Jump to projects
+alias e23c="cd /Users/christopherchant/workspace/exit23_clients"
+alias e23p="cd /Users/christopherchant/workspace/exit23_projects"
+
+
+

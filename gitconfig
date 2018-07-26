@@ -27,3 +27,7 @@
   path = ~/.gitconfig.local
 [diff]
   colorMoved = zebra
+[user]
+	name = chrischant3
+	email = christopher.chant@exit-23.co.uk
+
