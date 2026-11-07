@@ -6,21 +6,26 @@ alias e="$EDITOR"
 alias v="$VISUAL"
 
 # Bundler
-alias b="bundle"
+alias b="bundle install"
 
 # Rails
-alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
+alias migrate="bin/rails db:migrate db:rollback && bin/rails db:migrate db:test:prepare"
 alias s="rspec"
 
 # Pretty print the path
-alias path='echo $PATH | tr -s ":" "\n"'
+alias path='echo -e ${PATH//:/\\n}'
+
+# Easier navigation: ..., ...., ....., and -
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias -- -="cd -"
 
 # Include custom aliases
-[[ -f ~/.aliases.local ]] && source ~/.aliases.local
+if [[ -f ~/.aliases.local ]]; then
+  source ~/.aliases.local
+fi
 
 # Jump to projects
 alias e23c="cd /Users/christopherchant/workspace/exit23_clients"
 alias e23p="cd /Users/christopherchant/workspace/exit23_projects"
-
-
-
